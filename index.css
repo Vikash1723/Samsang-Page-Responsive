@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.con {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-1 {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-2 {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  img {
+    height: auto;
+  }
+
+  button {
+    font-size: 25px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .con {
+    max-width: 90%;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  button {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+
+  .btn-1 {
+    left: 5px;
+  }
+
+  .btn-2 {
+    right: 5px;
+  }
+}
+
+.hero-section {
+  background: url("./img/aq1.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-toggler {
+  position: relative;
+  right: 2px;
+}
+
+.products-section img {
+  width: 100%;
+  height: auto;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+}
+
+/* Custom styles */
+
+.devices-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.device-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.device-card img {
+  width: 100%;
+  height: auto;
+}
+
+.device-info {
+  padding: 15px;
+}
+
+.device-info h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.device-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .device-info h5 {
+    font-size: 1.1rem;
+  }
+
+  .device-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .device-info h5 {
+    font-size: 1rem;
+  }
+
+  .device-info p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.footer-right a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Responsive Footer */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  footer h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-right a {
+    font-size: 1.3rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
